@@ -1,0 +1,86 @@
+@media only screen and (max-width: 600px) {
+
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    .neonBox-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .switch {
+        padding: 0.8rem 2.5rem;
+    }
+
+    .custom_text {
+        font-size: 75px;
+        white-space: nowrap;
+        align-items: center;
+    }
+
+
+    .neon_customize_content_section {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input-neon-container {
+        background: none;
+        width: 100%;
+        height: 520px;
+        margin: 0px;
+        border-radius: 5px;
+    }
+
+    .neon-headingText .head-text {
+        font-size: 22px;
+        font-weight: 700;
+        color: #444;
+    }
+
+    .neon-headingText p {
+        width: 70%;
+    }
+
+    .input-wrapper input {
+        width: 320px;
+        height: 50px;
+    }
+
+    .fonts-wrapper h4,
+    .colors-wrapper h4,
+    .wirless-coustimize-section h4,
+    .size-wrapper h4 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .colorContains {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 15px;
+        column-gap: 4px;
+    }
+
+    .neon-size-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #smallButton,
+    #mediumButton,
+    #largeButton {
+        width: 320px;
+        height: 45px;
+    }
+
+    #add-to-cart {
+        width: 320px;
+        height: 45px;
+    }
+
+}

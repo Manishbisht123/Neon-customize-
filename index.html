@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Neon Signs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="./css/neon.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- neon box container section -->
+    <div class="neonBox-container">
+        <div class="neonboxImage">
+            <img src="./Assets/Image/bg.png" alt="background">
+            <div class="neon_customize_text_section">
+                <button class="switch" onclick="powerSwitch()" id="switchBtn">ON</button>
+                <span class="custom_text" id="customText">Your Text</span>
+            </div>
+        </div>
+        <div class="neon_customize_content_section">
+            <div class="input-neon-container">
+                <div class="neon-scroll-section">
+                    <div class="neon-headingText">
+                        <h2 class="head-text"> Custom Your Own Neon Signs</h2>
+                        <p class="paar">Create your own stunning Custom Neon sign in a few simple steps.</p>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" placeholder="Enter Text Here" id="customInput" maxlength="20"
+                            oninput="updateOutput()" name="somename"></textarea>
+                    </div>
+                    <p id="error-msg" hidden></p>
+
+
+                    <!--- font section start --->
+                    <div class="fonts-wrapper">
+                        <h4>Pick your Fonts</h4>
+                    </div>
+                    <div class="fonts-signs">
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('hello')"
+                                style="font-family: 'hello';">Hello</button>
+                        </div>
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('Billock')"
+                                style="font-family: 'Billock';">Billock</button>
+                        </div>
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('Carry')"
+                                style="font-family: 'Carry';">Carry</button>
+                        </div>
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('Sweetie')"
+                                style="font-family: 'Sweetie';">Sweetie</button>
+                        </div>
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('Korian')"
+                                style="font-family: 'Korian';">Korian</button>
+                        </div>
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('Neoncity')"
+                                style="font-family: 'Neoncity';">Neoncity</button>
+                        </div>
+                        <div class="font-boxs">
+                            <button class="font-text" onclick="changeFont('Sandwich')"
+                                style="font-family: 'Sandwich';">Sandwich</button>
+                        </div>
+                    </div>
+                    <!--- color section start --->
+                    <div class="colors-wrapper">
+                        <h4>Select your colors</h4>
+                    </div>
+                    <div class="colorContains">
+                        <div class="fonts-section">
+                            <button class="red" onclick="red()"></button>
+                            <h3>Red</h3>
+                        </div>
+                        <div class="fonts-section">
+                            <button class="blue" onclick="blue()"></button>
+                            <h3>Blue</h3>
+                        </div>
+                        <div class="fonts-section">
+                            <button class="Yellow" onclick="yellow()"></button>
+                            <h3>Yellow</h3>
+                        </div>
+                        <div class="fonts-section">
+                            <button class="Orange" onclick="orange()"></button>
+                            <h3>Orange</h3>
+                        </div>
+                        <div class="fonts-section">
+                            <button class="Pink" onclick="pink()"></button>
+                            <h3>Pink</h3>
+                        </div>
+                        <div class="fonts-section">
+                            <button class="Green" onclick="green()"></button>
+                            <h3>Green</h3>
+                        </div>
+                        <div class="fonts-section">
+                            <button class="Purple" onclick="purple()"></button>
+                            <h3>Purple</h3>
+                        </div>
+                    </div>
+                    <!--- size section start --->
+                    <div class="size-wrapper">
+                        <h4>Select your Size</h4>
+                    </div>
+                    <div class="neon-size-container">
+                        <button id="smallButton">
+                            Regular Size
+                        </button>
+                        <button id="mediumButton">
+                            Medium Size
+                        </button>
+                        <button id="largeButton">
+                            Large Size
+                        </button>
+                    </div>
+                    <div class="neon-add-to-cart-Button">
+                        <button id="add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script file link -->
+    <script src="./Javascript/script.js"></script>
+</body>
+</html>
